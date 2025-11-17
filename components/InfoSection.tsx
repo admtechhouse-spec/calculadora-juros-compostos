@@ -3,7 +3,7 @@ import React from 'react';
 
 export const InfoSection: React.FC = () => {
     return (
-        <div className="space-y-6 prose max-w-none prose-h2:text-red-800 prose-h2:font-bold prose-h3:text-gray-700 prose-a:text-red-700">
+        <div className="space-y-6 prose max-w-none prose-h2:text-[#2C3FA5] prose-h2:font-bold prose-h3:text-gray-700 prose-a:text-[#2C3FA5]">
             <h2>Entendendo a Calculadora de Juros Compostos</h2>
             <p>
                 Utilizar nossa calculadora para projetar seus investimentos é um processo simples e intuitivo. Siga os passos abaixo para ver a mágica dos juros compostos em ação:

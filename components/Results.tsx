@@ -25,9 +25,9 @@ export const Results: React.FC<ResultsProps> = ({ data }) => {
     return (
         <div className="space-y-8">
             <div>
-                <h2 className="text-2xl font-bold text-red-800 mb-4">Resultado</h2>
+                <h2 className="text-2xl font-bold text-[#2C3FA5] mb-4">Resultado</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-lg bg-red-800 text-white shadow">
+                    <div className="p-4 rounded-lg bg-[#2C3FA5] text-white shadow">
                         <p className="text-sm">Valor total final</p>
                         <p className="text-2xl font-bold">{formatCurrency(data.finalValue)}</p>
                     </div>
@@ -43,7 +43,7 @@ export const Results: React.FC<ResultsProps> = ({ data }) => {
             </div>
 
             <div>
-                <h3 className="text-xl font-bold text-red-800 mb-4">Gráfico:</h3>
+                <h3 className="text-xl font-bold text-[#2C3FA5] mb-4">Gráfico:</h3>
                 <div className="w-full h-80">
                     <ResponsiveContainer>
                         <LineChart data={chartDataTransformed} margin={{ top: 5, right: 20, left: 30, bottom: 5 }}>
@@ -53,14 +53,14 @@ export const Results: React.FC<ResultsProps> = ({ data }) => {
                             <Tooltip formatter={(value) => formatCurrency(value as number)} />
                             <Legend />
                             <Line type="monotone" dataKey="Valor Investido" stroke="#1f2937" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
-                            <Line type="monotone" dataKey="Total Acumulado" stroke="#991b1b" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
+                            <Line type="monotone" dataKey="Total Acumulado" stroke="#2C3FA5" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
                         </LineChart>
                     </ResponsiveContainer>
                 </div>
             </div>
 
             <div>
-                <h3 className="text-xl font-bold text-red-800 mb-4">Tabela:</h3>
+                <h3 className="text-xl font-bold text-[#2C3FA5] mb-4">Tabela:</h3>
                 <div className="max-h-96 overflow-auto border border-gray-200 rounded-lg shadow-inner">
                     <table className="w-full text-sm text-left text-gray-500">
                         <thead className="text-xs text-gray-700 uppercase bg-gray-100 sticky top-0">

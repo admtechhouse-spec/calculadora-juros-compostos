@@ -65,7 +65,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800 font-sans p-4 sm:p-6 md:p-8">
       <main className="max-w-5xl mx-auto space-y-8">
         <header className="text-center">
-            <h1 className="text-3xl sm:text-4xl font-bold text-red-800">
+            <h1 className="text-3xl sm:text-4xl font-bold text-[#2C3FA5]">
                 Simulador de Juros Compostos
             </h1>
             <p className="text-gray-600 mt-2">

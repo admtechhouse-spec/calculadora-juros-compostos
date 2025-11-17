@@ -123,7 +123,7 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ onCalculate, onC
         </InputGroup>
       </div>
       <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
-        <button type="submit" className="w-full sm:w-auto bg-red-800 text-white font-bold py-2 px-8 rounded-md hover:bg-red-900 transition-colors duration-300">
+        <button type="submit" className="w-full sm:w-auto bg-[#2C3FA5] text-white font-bold py-2 px-8 rounded-md hover:brightness-90 transition-all duration-300">
             Calcular
         </button>
         <button type="button" onClick={handleClearForm} className="w-full sm:w-auto sm:ml-auto text-gray-600 font-semibold py-2 px-4 rounded-md hover:bg-gray-100 transition-colors">
